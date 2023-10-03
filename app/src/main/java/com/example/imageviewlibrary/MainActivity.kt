@@ -9,6 +9,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.image_preview.ImagePreview
 import com.example.imageviewlibrary.ui.theme.ImageViewLibraryTheme
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-//                    ImagePreview(painter = )
+                    ImagePreview(painter = painterResource(id = R.drawable.ic_launcher_foreground))
                 }
             }
         }
